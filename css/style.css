@@ -69,21 +69,83 @@ strong {
   .smart {
     font-size: 21px;
   }
+  .console {
+    max-height: 157px;
+  }
 }
 @media screen and (max-width: 414px) {
   .smart {
     font-size: 17px;
+  }
+  .bal {
+    font-size: 1.5rem;
+  }
+  .badge {
+    display: none;
+  }
+  .btn.btn-lg {
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .balance-container, .row, .my-5 {
+    margin-top: 2rem!important;
+    margin-bottom: 1rem!important;
+  }
+  .wrapper {
+    padding-top: 5rem!important;
+    padding-bottom: 1rem!important;
   }
 }
 @media screen and (max-width: 375px) {
   .smart {
     font-size: 15px;
   }
-
+  .bal {
+    font-size: 1.2rem;
+  }
+  .badge {
+    display: none;
+  }
+  .btn.btn-lg {
+    font-size: 0.7rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  .balance-container, .row, .my-5 {
+    margin-top: 2rem!important;
+    margin-bottom: 1rem!important;
+  }
+  .wrapper {
+    padding-top: 5rem!important;
+    padding-bottom: 1rem!important;
+  }
 }
 @media screen and (max-width: 320px) {
   .smart {
     font-size: 13px;
+  }
+  .bal {
+    font-size: 1.1rem;
+  }
+  .badge {
+    display: none;
+  }
+  .btn.btn-lg {
+    font-size: 0.7rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  .balance-container, .row, .my-5 {
+    margin-top: 1rem!important;
+    margin-bottom: 1rem!important;
+  }
+  .wrapper {
+    padding-top: 5rem!important;
+    padding-bottom: 1rem!important;
   }
 }
 
