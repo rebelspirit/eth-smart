@@ -55,3 +55,37 @@ strong {
   height: 100%;
   max-height: 258px;
 }
+@media screen and (max-width: 1400px) {
+  .smart {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .smart {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .smart {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .smart {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .smart {
+    font-size: 15px;
+  }
+
+}
+@media screen and (max-width: 320px) {
+  .smart {
+    font-size: 13px;
+  }
+}
+
+
+
