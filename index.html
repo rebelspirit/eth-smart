@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ethereum Smart-contract</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style type="text/css">
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+    </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand text-warning" href="#yak1">
+        <strong>bitCash</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#yak1">Главная
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#yak2">О проекте</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#yak3">Как работает</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#yak4">Проценты</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
+              <i class="fa fa-paper-plane"></i>
+            </a>
+          </li>
+          <li class="nav-item ml-5">
+            <a href="index.html" class="nav-link">
+              RU
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="eng-index.html" class="nav-link">
+              ENG
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Indicators-->
+<!--     <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+    </ol> -->
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox" id="yak1">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('img/eth-bg-1.png'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4 text-warning">
+                <strong>Ethereum Фонд bitCash<span class="badge amber darken-2 ml-3">New</span></strong>
+              </h1>
+
+              <p>
+                <strong>это уникальный проект для инвестирования криптовалюты Ethereum и получения ежедневной прибыли от 6% до 9%</strong>
+              </p>
+
+              <p class="mb-5 d-none d-md-block">
+                <strong>Смарт контракт создан и зарегистрирован в системе Ethereum Blockchain и не может быть изменен или удален</strong>
+              </p>
+              <h3 class="mb-5 d-none d-md-block">
+                <strong>Гарантированное получение 200%</strong>
+              </h3>
+
+              <a href="#yak5" class="btn btn-outline-white btn-lg">Инвестировать
+                <i class="fa fa-usd ml-2"></i>
+              </a>
+              <a target="_blank" href="#" class="btn btn-outline-white btn-lg">Смарт-контракт
+                <i class="fa fa-file-code-o ml-2"></i>
+              </a>
+              <div class="row my-5">
+                <div class="col-lg-4 col-md-4">
+                  <h2 class="bal text-primary"><div id="balanceETH"></div></h2>
+                  <div class="subtxt text-warning">ETH на балансе</div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <h2 class="bal text-primary"><div id="balanceUSD"></div></h2>
+                  <div class="subtxt text-warning">USD на балансе</div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <h2 class="bal text-primary"><div id="countOfInvestors"></div></h2>
+                  <div class="subtxt text-warning">Инвесторов</div>
+                </div>
+              </div>
+              <p class="mb-4 d-none d-md-block">
+                <strong>Старт проекта - 19 октября 2018 года</strong>
+              </p>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+<!--     <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+
+      <!--Section: Main info-->
+      <section class="mt-5 wow zoomIn" id="yak2">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <div class="console z-depth-3"></div>
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!-- Main heading -->
+            <h3 class="h3 mb-3">Инвестиции</h3>
+            <p>Во время развития новых технологий в сети интернет, инвестиции криптовалют являются актуальным вкладом в наше будущее. Ваши инвестиции гарантированно застрахованы системой <strong>Ethereum Blockchain</strong>, открытым кодом смарт контракта. Смарт контракт интегрирован в <strong>Ethereum Blockchain</strong> и не может быть изменен или удален.</p>
+            <p>Инвестировав в Ethereum фонд <strong>bitCash</strong> вы ежечасно получаете процент <strong>(%)</strong> от вашего вклада.</p>
+            <!-- Main heading -->
+
+            <hr>
+
+            <p>Проект <strong>bitCash</strong> представляет долгосрочную перспективу извлечения дохода от <strong>6%</strong> до <strong>9%</strong> ежедневно.</p>
+            <p>Гарантированный доход инвесторов <strong>bitCash</strong> составляет минимум <strong>200%</strong> от вклада.</p>
+            <!-- CTA -->
+            <a href="#yak5" class="btn btn-grey btn-md">Инвестировать
+              <i class="fa fa-usd ml-1"></i>
+            </a>
+            <a target="_blank" href="#" class="btn btn-grey btn-md">Смарт-контракт
+              <i class="fa fa-file-code-o ml-1"></i>
+            </a>
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--Section: Main info-->
+
+      <hr class="my-5">
+
+      <!--Section: Main features & Quick Start-->
+      <section class="wow zoomIn" id="yak3">
+
+        <h3 class="h3 text-center mb-5">Как это работает?</h3>
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 px-4">
+
+            <!--First row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-cc-visa fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Начните прямо сейчас</h5>
+                <p class="grey-text">Для участия в проекте необходимо с вашего <strong>Ethereum кошелька</strong> отправить криптовалюту <strong>ETH</strong> на адрес смарт контракта.</p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <div style="height:30px"></div>
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-history fa-2x blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Начисление процентов %</h5>
+                <p class="grey-text"><strong>Ethereum</strong> смарт контракт запоминает адрес кошелька инвестора и начисляет его владельцу <strong>% каждый час</strong> от суммы вашего вклада, что даёт вам возможность вывода своих <strong>% в любое удобное для вас время</strong>.
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <div style="height:30px"></div>
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-line-chart fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Наши преимущества</h5>
+                <p class="grey-text">Инвестирование средств в <strong>bitCash</strong> это уникальная возможность заработка до <strong>9%</strong> ежедневно от суммы вашего вклада.</p>
+              </div>
+            </div>
+            <!--/Third row-->
+
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12">
+
+            <p class="h5 text-center mb-4">График количества Ethereum и Инвесторов</p>
+            <!--Chart-->
+            <canvas id="lineChart" style="max-width: 500px;"></canvas>
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Grid row-->
+
+      </section>
+      <!--Section: Main features & Quick Start-->
+
+      <hr class="my-5">
+
+      <!--Section: Main features & Quick Start-->
+      <section class="wow zoomIn" id="yak4">
+
+        <h3 class="h3 text-center mb-5">Распределение средств</h3>
+
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12">
+
+            <p class="h5 text-center mb-4">Процентное распределение</p>
+            <!--Chart-->
+            <canvas id="pieChart" style="max-width: 500px;"></canvas>
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 px-4">
+
+            <!--First row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-male fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Выплаты инвесторам - 90%</h5>
+                <p class="grey-text">Все инвесторы получают выплаты в размере <strong>90%</strong> от вложенной суммы. Если Вы вложили <strong>1 ЕТН</strong> то Ваша процентная ставка будет расчитываться после вычета из нее рекламного бюджета <strong>(8%)</strong> и комисии администрации <strong>(2%)</strong>.</p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <div style="height:30px"></div>
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-money fa-2x blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Реклама и Маркетинг - 8%</h5>
+                <p class="grey-text">В нашем проекте большой аспект уделяется рекламе и маркетинговому продвижению. Без рекламного бюджета проект быстро закроется, а мы расчитываем сделать его действительно долгосрочным.
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <div style="height:30px"></div>
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-group fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Администрация - 2%</h5>
+                <p class="grey-text">Данная комиссия это награда команде разработчиков.</p>
+              </div>
+            </div>
+            <!--/Third row-->
+
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Grid row-->
+
+      </section>
+
+      <hr class="my-5">
+
+      <!--Section: Main features & Quick Start-->
+      <section class="wow zoomIn">
+
+        <h3 class="h3 text-center mb-5">Динамическая процентная ставка</h3>
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 px-4">
+
+            <!--First row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-line-chart fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Изменение процентной ставки</h5>
+                <p class="grey-text">Стартовая процентная ставка фонда <strong>bitCash - 6%</strong>, (ежедневно), что составляет <strong>0.25% (в час)</strong>. <br>
+                <strong>Смарт - контракт</strong> имеет уникальный алгоритм начисления процентов инвестору каждый час. Данная функция сделана для удобства вкладчиков, и снятия процента в любое удобное для вас время, минимизируя риск потери остатка процентов за день.</p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <div style="height:30px"></div>
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-mail-forward fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">0 - 1000 ЕТН</h5>
+                <p class="grey-text">Если на счету смарт-контракта будет меньше 1000 ЕТН, Ваша процентная ставка в час = 0.25%.
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-mail-forward fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">1000 - 2500 ETH</h5>
+                <p class="grey-text">Когда баланс смарт-контракта привысит 1000 ЕТН процентная ставка вырастет до 0.3%.</p>
+              </div>
+            </div>
+            <!--/Third row-->
+            <!--Fours row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-mail-forward fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">2500 - 5000 ETH</h5>
+                <p class="grey-text">Когда баланс смарт-контракта привысит 2500 ЕТН процентная ставка вырастет до 0.35%.</p>
+              </div>
+            </div>
+            <!--/Fours row-->
+            <!--Fives row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-mail-forward fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">> 5000 ETH</h5>
+                <p class="grey-text">Когда баланс смарт-контракта привысит 5000 ЕТН процентная ставка вырастет до 0.375%.</p>
+              </div>
+            </div>
+            <!--/Fives row-->
+
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12">
+
+            <p class="h5 text-center mb-4">Процентная ставка в час</p>
+            <!--Chart-->
+            <canvas id="percentChart" style="max-width: 500px;"></canvas>
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Grid row-->
+
+      </section>
+      <!--Section: Main features & Quick Start-->
+      <hr class="my-5">
+      <!--Section: Not enough-->
+      <section>
+
+        <h2 class="my-5 h3 text-center wow zoomIn">Почему мы лучшие?</h2>
+
+        <!--First row-->
+        <div class="row features-small mb-5 mt-3">
+
+          <!--First column-->
+          <div class="col-md-4 wow zoomInLeft">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Защита</h6>
+                <p class="grey-text">Смарт-контракт защищен блокчейном Ethereum от вмешательства администрации и от других вмешательств.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Автоматизация</h6>
+                <p class="grey-text">Программа работает в автоматическом режиме.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Гарантированные 200%</h6>
+                <p class="grey-text">После получения Вами 200% от суммы инвестирования, Ваше участие автоматически приостановится. Освободив пространство для новых участников.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Third row-->
+
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Реинвестиция</h6>
+                <p class="grey-text">После окончания Вашего участия в проекте, Вы заново можете стать его участником.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Fourth row-->
+          </div>
+          <!--/First column-->
+
+          <!--Second column-->
+          <div class="col-md-4 flex-center wow zoomIn">
+            <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
+          </div>
+          <!--/Second column-->
+
+          <!--Third column-->
+          <div class="col-md-4 mt-2 wow zoomInRight">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Реклама</h6>
+                <p class="grey-text">Мы проводим грамотную рекламную политику, для привлечения новых участников.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Выплаты</h6>
+                <p class="grey-text">Вы можете получить свои дивиденды в любой момент. Заказав выплату.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Автоматическая выплата</h6>
+                <p class="grey-text">Если Вы ни разу не снимали свои дивиденды, система выплатит Вам все автоматически по достижению 200%.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Third row-->
+
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Динамическая процентная ставка</h6>
+                <p class="grey-text">Уникальный алгоритм процентной ставки, способствует долгосрочной перспективе проекта.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Fourth row-->
+          </div>
+          <!--/Third column-->
+
+        </div>
+        <!--/First row-->
+
+      </section>
+      <!--Section: Not enough-->
+
+      <hr class="mb-5">
+
+<!-- Projects section v.4 -->
+<section class="text-center my-5">
+
+  <!-- Section heading -->
+  <h2 class="h1-responsive font-weight-bold text-center my-5 wow zoomIn">Немного дополнительной информации</h2>
+  <!-- Section description -->
+  <p class="grey-text text-center w-responsive mx-auto mb-5 wow zoomIn">Ниже приведена дополнительная информация, которая поможет разобраться в особенностях нашего проекта.</p>
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-12 mb-4 wow zoomIn">
+      <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2832%29.jpg);">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+          <div>
+            <h3 class="py-3 font-weight-bold text-warning">
+              <strong>x2 или удвоенный вклад</strong>
+            </h3>
+            <p class="pb-3">В Ethereum фонде bitCash существует программа фиксированной прибыли или равные права между вкладчиками. Для долгосрочной жизни проекта было принято решение ограничить максимальное количество получения процентов из фонда. Этим мы достигаем равенства между участниками, и отпадает необходимость заходить только в самом начале жизни фонда.
+Инвестор достигший выплат 200% (100% вклад + 100% прибыль) от вклада (удвоивший свои инвестиции) выбывает из фонда автоматически, cмарт - контракт удаляет адрес его кошелька.
+Если участнику понравился проект и участие в нём, он может начать всё сначала, вложив повторно в Ethereum фонд bitCash.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-6 mb-md-0 mb-4 wow zoomIn">
+      <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20%2873%29.jpg);">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+          <div>
+            <h3 class="py-3 font-weight-bold text-warning">
+              <strong>HOLD</strong>
+            </h3>
+            <p class="pb-3">Интеграция функции максимальной прибыли установлено для долгой жизни проекта и рассчитана до мелочей. Вам этого не достаточно? Специально для вас есть режим HOLD, для тех участников кто сделал депозит в bitCash и ни разу не вывел свои проценты - есть отличная возможность заHOLDить и преодолеть максимальный порог начисления процентов!
+Все что вам необходимо для получения более 200% прибыли - это сделать вклад и не выводить проценты, just HOLD!
+При прохождение порога в 200% и достижении вами намеченной прибыли (которая удовлетворит ваши потребности) вы можете получить весь обьем HOLD инвестиций.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-6 wow zoomIn">
+      <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20%2847%29.jpg);">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+          <div>
+            <h3 class="py-3 font-weight-bold text-warning">
+              <strong>Нулевая транзакция</strong>
+            </h3>
+            <p class="pb-3">Нулевая транзакция необходима для выплаты процентов инвестору. Она выполняется с адреса вкладчика на адрес Смарт - контракта, далее программа пересчитывает процентную ставку согласно балансу на контракте, суммы вклада участника в данное время, и инициирует оплату инвестору.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Projects section v.4 -->
+      <hr class="mb-5">
+      <!--Section: More-->
+      <section id="yak5">
+
+        <h2 class="my-5 h3 text-center">...ну что? Начинаем..</h2>
+
+        <!--First row-->
+        <div class="row features-small mt-5 wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-square-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2 pl-3">
+                <h5 class="feature-title font-bold mb-1">Зарегистрируйте кошелек</h5>
+                <p class="grey-text mt-2">Вам необходимо зарегестрировать кошелек на MyEtherWallet.com так как переводы с быржи на смарт-контракт невозможны.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-square-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Пополните свой кошелек</h5>
+                <p class="grey-text mt-2">Если Ваш кошелек только что создан, положите на него желаемое количество ЕТН.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-square-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Инвестируйте</h5>
+                <p class="grey-text mt-2">Переведите желаемую сумму ЕТН на адрес смарт-контракта указанный ниже Внимание! Рекомендуемое gas limit: 150000, актуальный gas price можно взять с ethgasstation.info.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-square-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Получайте выплаты</h5>
+                <p class="grey-text mt-2">Получайте свои дивиденды в любое удобное для Вас время, отправив нулевую транзакцию.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/First row-->
+
+        <!--Second row-->
+        <div class="row features-small mt-4 wow fadeIn">
+          <div class="col-12 text-center">
+            <h3 class="mb-3">Адрес смарт-контракта</h3>
+            <h1 class="mb-5 py-3 px-3 block-example border border-dark">0xa3296436f6e85a7e8bfc485e64f05e35c9047c92</h1>
+          </div>
+        </div>
+        <!--/Second row-->
+
+      </section>
+      <!--Section: More-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="#" target="_blank">
+        <i class="fa fa-facebook mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fa fa-twitter mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fa fa-youtube mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fa fa-paper-plane mr-3"></i>
+      </a>
+      <a href="https://github.com/" target="_blank">
+        <i class="fa fa-github mr-3"></i>
+      </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href="#" target="_blank"> bitCash.io </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- API -->
+    <script type="text/javascript" src="js/web3.js"></script>
+    <!-- API scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Main scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
+      <!-- Initializations -->
+  	<script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>

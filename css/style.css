@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "HelveticaLight";
+  src: url("../font/HelveticaLight/HelveticaLight.eot");
+  src: url("../font/HelveticaLight/HelveticaLight.eot?#iefix")format("embedded-opentype"),
+  url("../font/HelveticaLight/HelveticaLight.woff") format("woff"),
+  url("../font/HelveticaLight/HelveticaLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  }
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; }
+
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.top-nav-collapse {
+  background-color: #1C2331; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; } }
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1C2331; }
+
+body {
+  font-family: "HelveticaLight";
+}
+strong {
+  font-weight: 700;
+}
+.console {
+  background-image: url(../img/console.gif);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+   background-size: contain;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 100%;
+  max-height: 258px;
+}

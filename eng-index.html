@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ethereum Smart-contract</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style type="text/css">
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+    </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand text-warning" href="#yak1">
+        <strong>bitCash</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#yak1">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#yak2">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#yak3">How works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#yak4">Percents</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
+              <i class="fa fa-paper-plane"></i>
+            </a>
+          </li>
+          <li class="nav-item ml-5">
+            <a href="index.html" class="nav-link">
+              RU
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="eng-index.html" class="nav-link">
+              ENG
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Indicators-->
+<!--     <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+    </ol> -->
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox" id="yak1">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('img/eth-bg-1.png'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4 text-warning">
+                <strong>Ethereum Foundation bitCash<span class="badge amber darken-2 ml-3">New</span></strong>
+              </h1>
+
+              <p>
+                <strong>This is a unique project for investing Ethereum cryptocurrency and receiving daily profits from 6% to 9%</strong>
+              </p>
+
+              <p class="mb-5 d-none d-md-block">
+                <strong>A smart contract is created and registered in the Ethereum Blockchain system and cannot be changed or deleted.</strong>
+              </p>
+              <h3 class="mb-5 d-none d-md-block">
+                <strong>Guaranteed receipt of 200%</strong>
+              </h3>
+
+              <a href="#yak5" class="btn btn-outline-white btn-lg">Invest
+                <i class="fa fa-usd ml-2"></i>
+              </a>
+              <a target="_blank" href="#" class="btn btn-outline-white btn-lg">Smart-contract
+                <i class="fa fa-file-code-o ml-2"></i>
+              </a>
+              <div class="row my-5">
+                <div class="col-lg-4 col-md-4">
+                  <h2 class="bal text-primary"><div id="balanceETH"></div></h2>
+                  <div class="subtxt text-warning">ETH on balance</div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <h2 class="bal text-primary"><div id="balanceUSD"></div></h2>
+                  <div class="subtxt text-warning">USD on balance</div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <h2 class="bal text-primary"><div id="countOfInvestors"></div></h2>
+                  <div class="subtxt text-warning">Investors</div>
+                </div>
+              </div>
+              <p class="mb-4 d-none d-md-block">
+                <strong>Start of the project - October 19, 2018</strong>
+              </p>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+<!--     <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+
+      <!--Section: Main info-->
+      <section class="mt-5 wow zoomIn" id="yak2">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <div class="console z-depth-3"></div>
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!-- Main heading -->
+            <h3 class="h3 mb-3">Investments</h3>
+            <p>During the development of new technologies on the Internet, cryptocurrency investments are a relevant contribution to our future. Your investment is guaranteed to be insured by the <strong> Ethereum Blockchain </strong>, an open source smart contract. The smart contract is integrated into the <strong> Ethereum Blockchain </ strong> and cannot be changed or deleted.</p>
+            <p>By investing in Ethereum with a fund <strong> bitCash </strong> you receive an hourly hourly percentage <strong> (%) </strong> of your contribution.</p>
+            <!-- Main heading -->
+
+            <hr>
+
+            <p>The <strong> bitCash </strong> project represents a long-term perspective for extracting income from <strong> 6% </strong> to <strong> 9% </strong> daily.</p>
+            <p>Guaranteed income of investors <strong> bitCash </strong> is at least <strong> 200% </strong> of the deposit.</p>
+            <!-- CTA -->
+            <a href="#yak5" class="btn btn-grey btn-md">Invest
+              <i class="fa fa-usd ml-1"></i>
+            </a>
+            <a target="_blank" href="#" class="btn btn-grey btn-md">Smart-contract
+              <i class="fa fa-file-code-o ml-1"></i>
+            </a>
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--Section: Main info-->
+
+      <hr class="my-5">
+
+      <!--Section: Main features & Quick Start-->
+      <section class="wow zoomIn" id="yak3">
+
+        <h3 class="h3 text-center mb-5">How it works?</h3>
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 px-4">
+
+            <!--First row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-cc-visa fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Get started now</h5>
+                <p class="grey-text">To participate in the project, you must send your <strong> ETH </strong> cryptocurrency to your smart contract address from your <strong> Ethereum wallet </strong>.</p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <div style="height:30px"></div>
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-history fa-2x blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Interest accrual %</h5>
+                <p class="grey-text"><strong> Ethereum </strong> a smart contract remembers the address of the investor’s wallet and charges it to the owner <strong>% every hour </strong> of the amount of your deposit, which allows you to withdraw your <strong>% at any time convenient for you </strong>.</p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <div style="height:30px"></div>
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-line-chart fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Our advantages</h5>
+                <p class="grey-text">Investing in <strong> bitCash </strong> is a unique opportunity to earn up to <strong> 9% </strong> daily from the amount of your contribution.</p>
+              </div>
+            </div>
+            <!--/Third row-->
+
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12">
+
+            <p class="h5 text-center mb-4">Graph of the number of Ethereum and Investors</p>
+            <!--Chart-->
+            <canvas id="lineChart" style="max-width: 500px;"></canvas>
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Grid row-->
+
+      </section>
+      <!--Section: Main features & Quick Start-->
+
+      <hr class="my-5">
+
+      <!--Section: Main features & Quick Start-->
+      <section class="wow zoomIn" id="yak4">
+
+        <h3 class="h3 text-center mb-5">Distribution of funds</h3>
+
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12">
+
+            <p class="h5 text-center mb-4">Percentage distribution</p>
+            <!--Chart-->
+            <canvas id="pieChart" style="max-width: 500px;"></canvas>
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 px-4">
+
+            <!--First row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-male fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Payments to investors - 90%</h5>
+                <p class="grey-text">All investors receive payments in the amount of <strong> 90% </strong> of the invested amount. If you have invested <strong> 1 UTN </strong> then your interest rate will be calculated after deducting the <strong> (8%) </strong> advertising budget from it and the <strong> (2%) administration fee </strong>.</p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <div style="height:30px"></div>
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-money fa-2x blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Advertising and Marketing - 8%</h5>
+                <p class="grey-text">In our project, a big aspect is paid to advertising and marketing promotion. Without an advertising budget, the project will quickly close, and we expect to make it really long-term.
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <div style="height:30px"></div>
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-group fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Administration - 2%</h5>
+                <p class="grey-text">This commission is a reward to the development team.</p>
+              </div>
+            </div>
+            <!--/Third row-->
+
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Grid row-->
+
+      </section>
+
+      <hr class="my-5">
+
+      <!--Section: Main features & Quick Start-->
+      <section class="wow zoomIn">
+
+        <h3 class="h3 text-center mb-5">Dynamic interest rate</h3>
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 px-4">
+
+            <!--First row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-line-chart fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Interest rate change</h5>
+                <p class="grey-text">The starting interest rate of the fund is <strong> bitCash - 6% </strong>, (daily), which is <strong> 0.25% (per hour) </strong>.<strong> Smart-Contract </strong> has a unique investor interest calculation algorithm every hour. This function is made for the convenience of investors, and the withdrawal of interest at any time convenient for you, minimizing the risk of losing the balance of interest per day.</p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <div style="height:30px"></div>
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-mail-forward fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">0 - 1000 ЕТН</h5>
+                <p class="grey-text">If the account of the smart contract is less than 1000 ETH, your interest rate per hour = 0.25%.
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-mail-forward fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">1000 - 2500 ETH</h5>
+                <p class="grey-text">When the balance of the smart contract will increase 1000 ETH interest rate will rise to 0.3%.</p>
+              </div>
+            </div>
+            <!--/Third row-->
+            <!--Fours row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-mail-forward fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">2500 - 5000 ETH</h5>
+                <p class="grey-text">When the balance of a smart contract increases 2500 ETH, the interest rate will rise to 0.35%.</p>
+              </div>
+            </div>
+            <!--/Fours row-->
+            <!--Fives row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-mail-forward fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">> 5000 ETH</h5>
+                <p class="grey-text">When the balance of a smart contract increases 5000 ETH interest rate will rise to 0.375%.</p>
+              </div>
+            </div>
+            <!--/Fives row-->
+
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12">
+
+            <p class="h5 text-center mb-4">Interest rate per hour</p>
+            <!--Chart-->
+            <canvas id="percentChart" style="max-width: 500px;"></canvas>
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Grid row-->
+
+      </section>
+      <!--Section: Main features & Quick Start-->
+      <hr class="my-5">
+      <!--Section: Not enough-->
+      <section>
+
+        <h2 class="my-5 h3 text-center wow zoomIn">Why are we the best?</h2>
+
+        <!--First row-->
+        <div class="row features-small mb-5 mt-3">
+
+          <!--First column-->
+          <div class="col-md-4 wow zoomInLeft">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Protection</h6>
+                <p class="grey-text">The smart contract is protected by the Ethereum blockchain from the intervention of the administration and from other interventions.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Automation</h6>
+                <p class="grey-text">The program works in automatic mode.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Guaranteed 200%</h6>
+                <p class="grey-text">After you receive 200% of the investment amount, your participation will automatically pause. Freeing up space for new members.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Third row-->
+
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Reinvestment</h6>
+                <p class="grey-text">After the end of your participation in the project, you can become its participant again.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Fourth row-->
+          </div>
+          <!--/First column-->
+
+          <!--Second column-->
+          <div class="col-md-4 flex-center wow zoomIn">
+            <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
+          </div>
+          <!--/Second column-->
+
+          <!--Third column-->
+          <div class="col-md-4 mt-2 wow zoomInRight">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Advertising</h6>
+                <p class="grey-text">We carry out a competent advertising policy to attract new participants.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Payouts</h6>
+                <p class="grey-text">You can get your dividends at any time. Ordering payment.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Automatic payout</h6>
+                <p class="grey-text">If you have never withdrawn your dividends, the system will pay you automatically when it reaches 200%.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Third row-->
+
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Dynamic interest rate</h6>
+                <p class="grey-text">Unique interest rate algorithm, contributes to the long term project.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Fourth row-->
+          </div>
+          <!--/Third column-->
+
+        </div>
+        <!--/First row-->
+
+      </section>
+      <!--Section: Not enough-->
+
+      <hr class="mb-5">
+
+<!-- Projects section v.4 -->
+<section class="text-center my-5">
+
+  <!-- Section heading -->
+  <h2 class="h1-responsive font-weight-bold text-center my-5 wow zoomIn">Some additional information</h2>
+  <!-- Section description -->
+  <p class="grey-text text-center w-responsive mx-auto mb-5 wow zoomIn">Below is additional information that will help to understand the features of our project.</p>
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-12 mb-4 wow zoomIn">
+      <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2832%29.jpg);">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+          <div>
+            <h3 class="py-3 font-weight-bold text-warning">
+              <strong>x2 or double the contribution</strong>
+            </h3>
+            <p class="pb-3">In the Ethereum fund bitCash there is a fixed profit program or equal rights between investors. For the long-term life of the project, it was decided to limit the maximum amount of interest received from the fund. By this we achieve equality between the participants, and there is no need to enter only at the very beginning of the life of the foundation.
+An investor who has reached a payout of 200% (100% deposit + 100% profit) from the deposit (having doubled his investments) is withdrawn from the fund automatically, the smart contract removes the address of his wallet.
+If a participant likes the project and participation in it, he can start all over again by re-investing bitCash in Ethereum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-6 mb-md-0 mb-4 wow zoomIn">
+      <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20%2873%29.jpg);">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+          <div>
+            <h3 class="py-3 font-weight-bold text-warning">
+              <strong>HOLD</strong>
+            </h3>
+            <p class="pb-3">The integration of the maximum profit function is established for the long life of the project and is calculated to the smallest detail. Isn't that enough for you? Especially for you there is a HOLD mode, for those participants who have made a deposit in bitCash and have never withdrawn their interest - there is a great opportunity to HOLD and overcome the maximum interest calculation threshold!
+All you need to get more than 200% of the profit is to make a contribution and not to withdraw interest, just HOLD!
+When you pass the threshold of 200% and you achieve your intended profit (which will satisfy your needs), you can get the full amount of HOLD investments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-6 wow zoomIn">
+      <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20%2847%29.jpg);">
+        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+          <div>
+            <h3 class="py-3 font-weight-bold text-warning">
+              <strong>Zero transaction</strong>
+            </h3>
+            <p class="pb-3">A zero transaction is required to pay interest to the investor. It runs from the depositor’s address to the Smart Contract address, then the program recalculates the interest rate according to the balance on the contract, the participant’s deposit amount at this time, and initiates payment to the investor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Projects section v.4 -->
+      <hr class="mb-5">
+      <!--Section: More-->
+      <section id="yak5">
+
+        <h2 class="my-5 h3 text-center">...Well? Getting started..</h2>
+
+        <!--First row-->
+        <div class="row features-small mt-5 wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-square-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2 pl-3">
+                <h5 class="feature-title font-bold mb-1">Register your wallet</h5>
+                <p class="grey-text mt-2">You need to register a wallet on MyEtherWallet.com because transfers from the burg to the smart contract are impossible.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-square-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Top up your wallet</h5>
+                <p class="grey-text mt-2">If your wallet has just been created, put the desired amount of ETH on it.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-square-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Invest</h5>
+                <p class="grey-text mt-2">Transfer the desired amount of ETH to the address of the smart contract below. Attention! Recommended gas limit: 150000, the current gas price can be obtained from ethgasstation.info.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-square-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Get paid</h5>
+                <p class="grey-text mt-2">Get your dividends at any time convenient for you by sending a zero transaction.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/First row-->
+
+        <!--Second row-->
+        <div class="row features-small mt-4 wow fadeIn">
+          <div class="col-12 text-center">
+            <h3 class="mb-3">Smart contract address</h3>
+            <h1 class="mb-5 py-3 px-3 block-example border border-dark">0xa3296436f6e85a7e8bfc485e64f05e35c9047c92</h1>
+          </div>
+        </div>
+        <!--/Second row-->
+
+      </section>
+      <!--Section: More-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="#" target="_blank">
+        <i class="fa fa-facebook mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fa fa-twitter mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fa fa-youtube mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fa fa-paper-plane mr-3"></i>
+      </a>
+      <a href="https://github.com/" target="_blank">
+        <i class="fa fa-github mr-3"></i>
+      </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href="#" target="_blank"> bitCash.io </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- API -->
+    <script type="text/javascript" src="js/web3.js"></script>
+    <!-- API scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Main scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
+      <!-- Initializations -->
+  	<script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>
