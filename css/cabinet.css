@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "HelveticaLight";
+  src: url("../font/HelveticaLight/HelveticaLight.eot");
+  src: url("../font/HelveticaLight/HelveticaLight.eot?#iefix")format("embedded-opentype"),
+  url("../font/HelveticaLight/HelveticaLight.woff") format("woff"),
+  url("../font/HelveticaLight/HelveticaLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  }
+/* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; }
+.text-weight {
+  font-weight: 500;
+}
+.text-size {
+  font-size: 1.7rem;
+}
+body {
+  font-family: "HelveticaLight";
+}
+@media (max-width: 740px) {
+  .full-page-intro {
+    height: 1000px; } }
+
+/* Half Page Carousel itself*/
+.carousel {
+  height: 50%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Adjustment for mobile devices*/
+@media (max-width: 776px) {
+  .carousel {
+    height: 100%; } }
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.top-nav-collapse {
+  background-color: #1C2331; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; } }
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1C2331; }
